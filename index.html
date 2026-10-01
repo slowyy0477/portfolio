@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0c0f">
+<title>Abdullah Murtaza — Software Engineering Student · Python &amp; Game Development</title>
+<meta name="description" content="Abdullah Murtaza — BS Software Engineering student at COMSATS University Islamabad, Attock Campus. I build Python automation pipelines, 2D games in Godot 4, and hand-coded websites. Open to freelance work.">
+<meta name="author" content="Abdullah Murtaza">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abdullah Murtaza — Software Engineering Student">
+<meta property="og:description" content="Python automation, Godot 4 game development and hand-coded web front-ends. Three complete projects, built end to end.">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+
+<a class="skip-link" href="#work">Skip to work</a>
+
+<noscript>
+  <div class="wrap noscript">
+    <p><strong>JavaScript is switched off</strong>, so the project list, skills, services and my
+    email address cannot load on this page. You can still reach me on GitHub —
+    <a href="https://github.com/slowyy0477" target="_blank" rel="noopener">github.com/slowyy0477</a>
+    — or switch JavaScript on and reload for the full site.</p>
+  </div>
+</noscript>
+
+<header class="topbar" id="topbar">
+  <div class="wrap topbar__in">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32" role="img" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" rx="9" fill="none" stroke="currentColor" stroke-opacity=".35"/>
+          <path d="M9 22.5 15.9 9.5 22.8 22.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M12.4 18.4h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand__text" data-config="meta.name">Abdullah Murtaza</span>
+    </a>
+
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="navmenu" aria-label="Open menu">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="navmenu" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#notes" data-optional>Notes</a>
+      <a href="#journey">Journey</a>
+      <a href="#services">Services</a>
+      <a href="#fyp" data-optional>FYP help</a>
+      <a class="nav__cta" href="#contact">Hire me</a>
+    </nav>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" aria-labelledby="hero-name">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="wrap hero__grid">
+
+      <div class="hero__col">
+        <p class="eyebrow" data-anim>
+          <span class="dot" aria-hidden="true"></span>
+          <span data-config="hero.status">Available for freelance work</span>
+        </p>
+
+        <h1 class="hero__name" id="hero-name" data-anim>
+          <span data-config="meta.name">Abdullah Murtaza</span>
+        </h1>
+
+        <p class="hero__role" data-anim>
+          <span data-config="meta.role">BS Software Engineering student · COMSATS University Islamabad, Attock Campus</span>
+        </p>
+
+        <p class="hero__lede" data-anim data-config="hero.lede">
+          I build things that run: automation pipelines in Python, 2D games in Godot 4, and websites written by hand.
+        </p>
+
+        <div class="hero__actions" data-anim>
+          <a class="btn btn--solid" href="#work">See my work</a>
+          <a class="btn btn--ghost" href="#services">Work with me</a>
+        </div>
+
+        <ul class="hero__facts" data-anim>
+          <!-- rendered from CONFIG.hero.facts -->
+        </ul>
+      </div>
+
+      <aside class="terminal" data-anim aria-label="Terminal summary">
+        <div class="terminal__bar">
+          <span class="terminal__dot" aria-hidden="true"></span>
+          <span class="terminal__dot" aria-hidden="true"></span>
+          <span class="terminal__dot" aria-hidden="true"></span>
+          <span class="terminal__title" data-config="hero.terminalTitle">abdullah@portfolio — bash</span>
+        </div>
+        <pre class="terminal__body" id="terminalBody" aria-live="polite"><code></code></pre>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ============================ TICKER ============================ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track" id="tickerTrack"></div>
+  </div>
+
+  <!-- ============================ ABOUT ============================ -->
+  <section class="section" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <p class="kicker" data-anim><span>01</span> About</p>
+      <div class="split">
+        <div class="split__main">
+          <h2 class="h2" id="about-h" data-anim>
+            <span data-config="about.heading">A first-year student who ships finished things, not half-finished ideas.</span>
+          </h2>
+          <div class="prose" data-anim>
+            <!-- rendered from CONFIG.about.paragraphs -->
+          </div>
+        </div>
+        <aside class="split__side" data-anim>
+          <dl class="statlist" id="statList">
+            <!-- rendered from CONFIG.about.stats -->
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SKILLS ============================ -->
+  <section class="section" id="skills" aria-labelledby="skills-h">
+    <div class="wrap">
+      <p class="kicker" data-anim><span>02</span> Skills</p>
+      <h2 class="h2" id="skills-h" data-anim>
+        <span data-config="skills.heading">Honest about what I can do alone, and what I am still learning.</span>
+      </h2>
+      <p class="section__note" data-anim data-config="skills.note"></p>
+      <div class="skillgrid" id="skillGrid">
+        <!-- rendered from CONFIG.skills -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WORK ============================ -->
+  <section class="section" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <p class="kicker" data-anim><span>03</span> Work</p>
+      <h2 class="h2" id="work-h" data-anim>
+        <span data-config="work.heading">Three projects, built end to end.</span>
+      </h2>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by type" data-anim>
+        <!-- rendered from CONFIG.projects tags -->
+      </div>
+
+      <div class="projectlist" id="projectList" aria-live="polite">
+        <!-- rendered from CONFIG.projects -->
+      </div>
+
+      <p class="empty" id="emptyState" hidden>Nothing in this category yet.</p>
+
+      <div class="inprog" id="inProgress" data-anim>
+        <!-- rendered from CONFIG.inProgress -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ NOTES ============================ -->
+  <section class="section" id="notes" aria-labelledby="notes-h">
+    <div class="wrap">
+      <p class="kicker" data-anim><span>04</span> Notes &amp; prep</p>
+      <h2 class="h2" id="notes-h" data-anim>
+        <span data-config="notes.heading">My semester notes, free to take.</span>
+      </h2>
+      <p class="section__note" data-anim data-config="notes.note"></p>
+
+      <div class="notes" id="noteList">
+        <!-- rendered from CONFIG.notes.items, or CONFIG.notes.empty while empty -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ JOURNEY ============================ -->
+  <section class="section" id="journey" aria-labelledby="journey-h">
+    <div class="wrap">
+      <p class="kicker" data-anim><span>05</span> Journey</p>
+      <h2 class="h2" id="journey-h" data-anim>
+        <span data-config="journey.heading">Where I am, and what comes next.</span>
+      </h2>
+      <ol class="timeline" id="timeline">
+        <!-- rendered from CONFIG.journey -->
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================ SERVICES ============================ -->
+  <section class="section" id="services" aria-labelledby="services-h">
+    <div class="wrap">
+      <p class="kicker" data-anim><span>06</span> Services</p>
+      <h2 class="h2" id="services-h" data-anim>
+        <span data-config="services.heading">Work you can hand me and forget about.</span>
+      </h2>
+      <p class="section__note" data-anim data-config="services.note"></p>
+
+      <div class="pricing" id="pricing">
+        <!-- rendered from CONFIG.services -->
+      </div>
+
+      <div class="promise" data-anim>
+        <h3 class="promise__h" data-config="promise.heading">My one rule</h3>
+        <p class="promise__p" data-config="promise.body"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FYP HELP ============================ -->
+  <section class="section" id="fyp" aria-labelledby="fyp-h">
+    <div class="wrap">
+      <p class="kicker" data-anim><span>07</span> FYP help</p>
+      <h2 class="h2" id="fyp-h" data-anim>
+        <span data-config="fyp.heading">Stuck on your FYP? I can help you shape it.</span>
+      </h2>
+      <p class="section__note" data-anim data-config="fyp.lede"></p>
+
+      <div class="ways" id="fypWays">
+        <!-- rendered from CONFIG.fyp.ways -->
+      </div>
+
+      <div class="fyp__split">
+        <div class="fyp__col">
+          <h3 class="subh" data-anim data-config="fyp.examplesHeading"></h3>
+          <p class="subnote" data-anim data-config="fyp.examplesNote"></p>
+          <ul class="exlist" id="fypExamples">
+            <!-- rendered from CONFIG.fyp.examples -->
+          </ul>
+        </div>
+        <div class="fyp__col">
+          <h3 class="subh" data-anim data-config="fyp.ratesHeading"></h3>
+          <div class="rates" id="fypRates">
+            <!-- rendered from CONFIG.fyp.rates -->
+          </div>
+        </div>
+      </div>
+
+      <p class="fyp__note" data-anim data-config="fyp.note"></p>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section class="section section--contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <p class="kicker" data-anim><span>08</span> Contact</p>
+      <h2 class="h2 h2--big" id="contact-h" data-anim>
+        <span data-config="contact.heading">Tell me what you need built.</span>
+      </h2>
+      <p class="contact__lede" data-anim data-config="contact.lede"></p>
+
+      <div class="contact__actions" data-anim>
+        <button class="btn btn--solid" id="copyEmail" type="button">
+          <span data-config="contact.cta">Email me</span>
+        </button>
+        <a class="btn btn--ghost" id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn--ghost" id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn--ghost" id="whatsappLink" href="#" target="_blank" rel="noopener" hidden>WhatsApp</a>
+      </div>
+
+      <p class="copyhint" id="copyHint" role="status" aria-live="polite"></p>
+
+      <dl class="contact__meta" data-anim>
+        <div><dt>Email</dt><dd id="emailText"></dd></div>
+        <div><dt>Based in</dt><dd data-config="meta.location"></dd></div>
+        <div><dt>Status</dt><dd data-config="contact.status"></dd></div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p data-config="footer.line"></p>
+    <p class="footer__meta">
+      <span data-config="footer.builtWith"></span>
+      <button class="linklike" id="toTop" type="button">Back to top</button>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
