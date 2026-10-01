@@ -155,20 +155,20 @@ const CONFIG = {
     }
     ,{
       title: "Salon OS",
-      kind: "Client app · PWA + Android",
+      kind: "Client app · Ayan Beauty Salon",
       year: "2026",
-      summary: "A salon operations app I built for an independent salon client: customers book, "
-             + "staff and time slots are managed, and every visit and wallet entry stays on the "
-             + "phone. It ships as an installable web app and a signed Android APK, and it runs "
-             + "with no server at all — nothing leaves the device unless the owner deliberately "
-             + "points it somewhere.",
+      summary: "A salon operations app I built for Ayan Beauty Salon: customers book, staff and "
+             + "time slots are managed, and every visit and wallet entry stays on the phone. It "
+             + "ships as an installable web app and a signed Android APK, and it runs with no "
+             + "server at all — nothing leaves the device unless the owner deliberately points it "
+             + "somewhere.",
       highlights: [
         "3,236 lines of plain JavaScript — no framework, so it opens immediately on a cheap phone",
         "Offline-first: service worker plus on-device storage; the app never calls out on its own",
         "Sign-in keeps only a salted PBKDF2-HMAC-SHA256 digest, with a 5-attempt, 15-minute lockout enforced on both the phone and the server",
         "Bookings with staff and slot selection, optional add-ons, reminders, referrals and a PKR wallet ledger",
         "Schema migrations (V13/V14) so owner-managed data — including the animated haircut gallery — survives app updates",
-        "213 KB signed release APK, built with a documented Gradle release-signing process",
+        "Signed release APKs from a documented Gradle signing process: a 213 KB build, a SHA-256 checksum published with every release and a dated backup kept of each one",
         "No client identity is baked into the build: a fresh install shows a neutral name until the owner sets his own"
       ],
       stack: ["JavaScript", "PWA", "Service worker", "Android · Java", "Gradle", "PBKDF2 auth"],
