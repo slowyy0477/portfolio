@@ -16,7 +16,7 @@ const CONFIG = {
   meta: {
     name:     "Abdullah Murtaza",                  // REPLACE if you want your full legal name
     short:    "Abdullah",
-    role:     "BS Software Engineering student · COMSATS University Islamabad, Attock Campus",
+    role:     "Software engineering student · game developer · freelance web & software developer",
     location: "Attock, Punjab, Pakistan",
     uni:      "COMSATS University Islamabad — Attock Campus",
     program:  "BS Software Engineering",
@@ -27,48 +27,52 @@ const CONFIG = {
   /* ----------------------------------------------------------------- hero */
   hero: {
     status: "Available for freelance work",
-    lede:   "I am a first-semester Software Engineering student who builds complete things: " +
-            "a 2D game written from scratch in Godot 4, and the tooling and tests that keep it working. " +
-            "I learn by finishing, not by starting.",
+    lede:   "I build games, apps and tools — and what I love is the logic underneath: working out " +
+            "how a thing actually works, then making it work. I have been into this since I was a " +
+            "kid. Now I finish what I start, and it ends up here.",
     facts: [                                       // REPLACE / add as you go — 3 to 4 reads best
+      { value: "9",     label: "Projects on this site" },
       { value: "1st",   label: "Semester · BS SE" },
-      { value: "1",     label: "Game built end to end" },
       { value: "10–15", label: "Hours a week building" },
-      { value: "2026",  label: "Started building" }
+      { value: "2026",  label: "Started building seriously" }
     ],
     terminalTitle: "abdullah@portfolio: ~",
     terminal: [                                    // typed out line by line in the hero
-      { cmd: "whoami",          out: "Abdullah Murtaza — BS Software Engineering, COMSATS Islamabad (Attock Campus)" },
-      { cmd: "cat focus.txt",   out: "Godot 4 / GDScript · game systems · Python · clean, tested code" },
-      { cmd: "ls projects/",    out: "the-last-light/" },
-      { cmd: "ls now/",         out: "semester-1/   open-to-freelance-work/" }
+      { cmd: "whoami",             out: "Abdullah Murtaza — BS Software Engineering, COMSATS Islamabad (Attock Campus)" },
+      { cmd: "cat interests.txt",  out: "games · AI · software · apps — since childhood" },
+      { cmd: "ls games/",          out: "finding-noor/  the-last-light/  (both Godot 4, zero imported assets)" },
+      { cmd: "cat how-i-work.txt", out: "AI tools write much of the code. The direction, the decisions and the testing are mine." }
     ]
   },
 
   /* ---------------------------------------------------------------- about */
   about: {
-    heading: "A first-year student who ships finished things, not half-finished ideas.",
+    heading: "I build real things — and I tell you honestly how each one was made.",
     paragraphs: [                                  // REPLACE — keep it in your own voice
-      "I am Abdullah Murtaza, a 1st-semester **BS Software Engineering** student at " +
-      "COMSATS University Islamabad, Attock Campus. I started learning to build software seriously " +
-      "in 2026 and I have kept one rule since: every thing I start, I finish and test.",
+      "I am Abdullah Murtaza, a 1st-semester **BS Software Engineering** student at COMSATS " +
+      "University Islamabad, Attock Campus. What I actually love is building and designing, and the " +
+      "logic underneath: how a system really works. Game development is what I am studying hardest, " +
+      "alongside AI, software and app development. I have more ideas than I can build — they arrive " +
+      "when I am out walking around — so I keep one rule: finish what I start.",
 
-      "My main project is **The Last Light**, a 2D story-driven platformer I am building in **Godot 4** " +
-      "with pure GDScript. There are no imported art or audio assets in it at all — every sprite is drawn " +
-      "in code and every sound is generated at runtime. It ships with a **headless acceptance suite of 97 " +
-      "automated checks, all passing**, so I can prove it still works instead of hoping it does.",
+      "Here is the part most portfolios leave out. On most of the projects below, **the AI tools wrote " +
+      "a large share of the code**. I set the goal, made the design and product decisions, and tested " +
+      "whether the thing actually worked. I would rather say that in the first paragraph than have it " +
+      "surface in an interview. What I bring is direction and judgement — what to build, what to cut, " +
+      "what 'done' means, and whether it truly works — and I am studying the fundamentals so that more " +
+      "of the code itself becomes mine every semester.",
 
       "Alongside university I put in **10–15 hours a week** on projects and fundamentals. My goal is " +
-      "straightforward: build a body of real, working software that people can open and use, and turn that " +
-      "into remote work while I am still studying."
+      "straightforward: build a body of real, working software that people can open and use, and turn " +
+      "that into remote work while I am still studying."
     ],
     stats: [                                       // REPLACE the numbers as they change
-      { k: "University",  v: "COMSATS, Attock" },
-      { k: "Programme",   v: "BS Software Eng." },
-      { k: "Semester",    v: "1st" },
-      { k: "Main stack",  v: "Godot 4 · GDScript" },
-      { k: "Test suite",  v: "97 checks" },
-      { k: "Time/week",   v: "10–15 hours" }
+      { k: "University",    v: "COMSATS, Attock" },
+      { k: "Programme",     v: "BS Software Eng." },
+      { k: "Semester",      v: "1st" },
+      { k: "Projects here", v: "9" },
+      { k: "Main stack",    v: "Godot 4 · GDScript" },
+      { k: "Time/week",     v: "10–15 hours" }
     ]
   },
 
@@ -78,6 +82,13 @@ const CONFIG = {
     note:    "Three levels only: I can build it, I can use it, or I am learning it. " +
              "Nothing here is claimed above what I can actually do in an interview.",
     groups: [                                      // REPLACE — trim or extend to match reality
+      {
+        group: "Working with AI",
+        items: [
+          { name: "Directing AI coding tools", level: "Can use",  note: "Codex and Claude build alongside me. I set the goal, make the calls and test what comes back — and every project here says so." },
+          { name: "Reading generated code",    level: "Learning", note: "Working out what the tools wrote, why it breaks, and fixing the cause rather than the symptom." }
+        ]
+      },
       {
         group: "Languages & engines",
         items: [
@@ -107,7 +118,10 @@ const CONFIG = {
 
   /* --------------------------------------------------------------- work */
   work: {
-    heading: "What I have built, and what I am building now."
+    heading: "Everything I have built, and how it was made.",
+    note:    "On every project here the AI tools wrote a large share of the code. The direction, the " +
+             "design decisions and the testing were mine. I would rather you knew that before you " +
+             "interview me than after."
   },
 
   /* ============================================================ PROJECTS
@@ -125,6 +139,36 @@ const CONFIG = {
      ==================================================================== */
   projects: [
     {
+      title: "Finding Noor",
+      kind: "Godot 4 third-person shooter",
+      year: "2026",
+      summary: "A third-person shooter built in Godot 4 with pure GDScript. You play Hamza, a father " +
+               "working through five hostile locations to find his kidnapped daughter. Like The Last " +
+               "Light it ships zero imported assets: every building, crate, crane and tree is generated " +
+               "from code and every gunshot, footstep and radio hiss is synthesised at startup.",
+      highlights: [
+        "Five hand-built missions — docks, city, pine ridge, ironworks, quarry boss fight — authored as data, so a bad spawn is a test failure instead of an unpleasant surprise",
+        "336-check headless acceptance suite, all passing: it builds every level, shoots, kills, collects, dies, wins and reads the menus without a human at the keyboard",
+        "Shoulder-cam third-person combat: hip fire and aim-down-sights spreads, recoil, headshot damage, hitmarkers, laser-telegraphed snipers, shotgun rushers, exploding barrels",
+        "The whole static level merges into a handful of draw batches at load and nothing is allocated mid-firefight, so it holds up on an Intel HD 615 laptop",
+        "All art procedural, all audio synthesised at runtime, colour and game-feel numbers centralised in one file each"
+      ],
+      stack: ["Godot 4", "GDScript", "Procedural 3D", "Runtime audio", "Automated tests"],
+      tags: ["Game dev", "Godot", "3D", "Testing"],
+      image: "assets/images/noor/01_firefight.png",
+      gallery: [                                  // thumbnails that swap the main shot on click
+        { src: "assets/images/noor/01_firefight.png",
+          caption: "A firefight in mission one — the docks. Procedural geometry, procedural gunfire." },
+        { src: "assets/images/noor/02_quarry.png",
+          caption: "The quarry: the last mission, and Vargo's turf." },
+        { src: "assets/images/noor/03_title.png",
+          caption: "The title screen, also rendered live in the engine — no art files." },
+        { src: "assets/images/noor/04_pause.png",
+          caption: "Pause menu with live settings: sensitivity, FOV, head bob, shadows." }
+      ],
+      links: { code: "", demo: "" }               // REPLACE with real URLs when the repo/build is public
+    }
+    ,{
       title: "The Last Light",
       kind: "Godot 4 game",
       year: "2026",
@@ -406,16 +450,22 @@ const CONFIG = {
     heading: "Where I am, and what comes next.",
     items: [
       {
+        when: "Before this · as a kid", state: "",
+        title: "Hooked on how things work",
+        body: "The interest is old. Anything with logic in it — games first — and the need to know how " +
+              "it works underneath. That never wore off; it just turned into code."
+      },
+      {
         when: "Now · Semester 1, 2026", state: "now",
         title: "BS Software Engineering — COMSATS University Islamabad, Attock Campus",
-        body: "Studying the fundamentals while building real software outside class. " +
-              "Right now that is The Last Light in Godot 4: game systems, testing, and finishing what I start."
+        body: "Studying the fundamentals while building real software outside class: a Godot 4 game, " +
+              "two client apps, a full-stack habit tracker and a school management system."
       },
       {
         when: "Alongside · 2026", state: "",
         title: "Building in public",
-        body: "Every project I finish goes on this site with the specifics — what it does, what it is built " +
-              "with, and how it is tested. The list only grows; nothing gets quietly deleted."
+        body: "Every project I finish goes up here with the specifics — what it does, what it is built " +
+              "with, how it is tested, and who did what. The list only grows; nothing gets quietly deleted."
       },
       {
         when: "Next · Semester 2", state: "next",
